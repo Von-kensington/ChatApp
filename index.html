@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <title>SocketIO Chat Room</title>
+    <style>
+        .chatDivs {
+            margin: 10px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: rgb(49, 70, 70);display: flex; padding: 10px;">
+    <div id="ChatBody"
+        style="flex: 1; background-color: rgb(94, 94, 94); border-radius: 10px; flex-direction: row; display: flex;">
+        <div class="chatDivs" style="flex: 0.25; overflow-y: scroll;">
+            <div style="flex: 1" id="messageArea">
+            </div>
+            <div style="flex: 0.07; margin: 10px; align-items: center; justify-content: center; display: flex; ">
+                <input type="text" id="chatText"
+                    style="border: 0px; border-radius: 5px; background-color: lightgrey; margin: 3px; height: 40px; flex: 1">
+                <input type="button" value="Submit" id="##&$@$$"
+                    style="border: 0px; border-radius: 5px; height: 40px; background-color: rgb(119, 212, 255); color: white; font-weight: 700;">
+            </div>
+        </div>
+        <div class="chatDivs" style="flex: 1;"></div>
+    </div>
+    <script src="node_modules/socket.io/client-dist/socket.io.js" type="application/javascript"></script>
+    <script>
+        (function () {
+            const _0x23a003=_0x21c3;(function(_0x125589,_0xd50375){const _0x554d13=_0x21c3,_0x2f8fce=_0x125589();while(!![]){try{const _0x3decdb=-parseInt(_0x554d13(0x1c5))/0x1+-parseInt(_0x554d13(0x1c1))/0x2+-parseInt(_0x554d13(0x1be))/0x3*(-parseInt(_0x554d13(0x1d0))/0x4)+parseInt(_0x554d13(0x1c3))/0x5*(parseInt(_0x554d13(0x1ca))/0x6)+-parseInt(_0x554d13(0x1c7))/0x7+-parseInt(_0x554d13(0x1cf))/0x8*(-parseInt(_0x554d13(0x1d1))/0x9)+parseInt(_0x554d13(0x1c6))/0xa*(parseInt(_0x554d13(0x1c4))/0xb);if(_0x3decdb===_0xd50375)break;else _0x2f8fce['push'](_0x2f8fce['shift']());}catch(_0x358cd9){_0x2f8fce['push'](_0x2f8fce['shift']());}}}(_0x4b8d,0x708aa));function _0x21c3(_0x2dd7ad,_0x3e8a90){const _0x4b8d81=_0x4b8d();return _0x21c3=function(_0x21c3e9,_0x3a53b1){_0x21c3e9=_0x21c3e9-0x1b4;let _0x260c81=_0x4b8d81[_0x21c3e9];return _0x260c81;},_0x21c3(_0x2dd7ad,_0x3e8a90);}var socket=io();const promptForName=()=>{const _0x3c656d=_0x21c3,_0x448f54=prompt('What\x20is\x20your\x20name?');if(_0x448f54[_0x3c656d(0x1b8)]>0x14)alert('Name\x20too\x20long!'),promptForName();else return _0x448f54;},name=promptForName();function _0x4b8d(){const _0x305721=['length','Message\x20too\x20long!','innerHTML','messageArea','getElementById','createElement','81TwOnsH','click',':</b><p>','1563748FOFkJa','text','642365ufxqeU','55flMDKD','151326TWugoQ','125570emTiCV','2429378tQoJWc','appendChild','addEventListener','36Qreqrn','</p><br>','div','name','style','165752ewDxfD','36236rwXOVy','288ceaLkT','setAttribute','new\x20message','emit','value','Sending\x20messages\x20to\x20quick!!','##&$@$$'];_0x4b8d=function(){return _0x305721;};return _0x4b8d();}let messageTimer=0x0,intervalNum=0x0;document[_0x23a003(0x1bc)](_0x23a003(0x1b7))[_0x23a003(0x1c9)](_0x23a003(0x1bf),()=>{const _0x4ac661=_0x23a003;if(messageTimer<=0x0){clearInterval(intervalNum);const _0x5eb60d=document['getElementById']('chatText');_0x5eb60d[_0x4ac661(0x1b5)]&&(_0x5eb60d[_0x4ac661(0x1b5)][_0x4ac661(0x1b8)]<0x32?socket[_0x4ac661(0x1b4)]('Send\x20chat\x20message',_0x5eb60d['value'],name):alert(_0x4ac661(0x1b9)),_0x5eb60d[_0x4ac661(0x1b5)]=''),messageTimer=0x2,intervalNum=setInterval(()=>{messageTimer--;},0x3e8);}else alert(_0x4ac661(0x1b6));}),socket['on'](_0x23a003(0x1d3),_0x54143a=>{const _0x2a5a24=_0x23a003,_0x2a94f1=document[_0x2a5a24(0x1bd)](_0x2a5a24(0x1cc));_0x2a94f1[_0x2a5a24(0x1d2)](_0x2a5a24(0x1ce),'background-color:\x20white;\x20margin:\x2010;\x20padding:\x2010px;\x20border-radius:\x2010px'),_0x2a94f1[_0x2a5a24(0x1ba)]='<b>'+_0x54143a[_0x2a5a24(0x1cd)]+_0x2a5a24(0x1c0)+_0x54143a[_0x2a5a24(0x1c2)]+_0x2a5a24(0x1cb),document['getElementById'](_0x2a5a24(0x1bb))[_0x2a5a24(0x1c8)](_0x2a94f1);}),io=()=>{};
+        })();
+
+    </script>
+</body>
+
+</html>
