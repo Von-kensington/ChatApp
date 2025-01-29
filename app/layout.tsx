@@ -10,8 +10,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
+      <body className="bg-gray-100 text-gray-800">
+        <main className="container"></main>{children}
       </body>
     </html>
   );
