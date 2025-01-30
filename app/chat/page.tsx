@@ -15,7 +15,7 @@ export default function ChatPage() {
       </header>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto p-4">
+      <div className="flex-1 overflow-y-auto p-4 chat-container">
         {messages.map((message) => (
           <ChatMessage key={message.id} user={message.user} text={message.text} />
         ))}
