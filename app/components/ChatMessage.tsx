@@ -1,5 +1,5 @@
 export default function ChatMessage({ user, text }: { user: string; text: string }) {
-  const isCurrentUser = user === "You"; // Replace with actual logic for the current user
+  const isCurrentUser = user === "Alice" // Replace with actual logic for the current user
 
   return (
     <div
